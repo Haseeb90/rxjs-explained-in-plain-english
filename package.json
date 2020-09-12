@@ -1,0 +1,23 @@
+{
+  "name": "rxjs_explained_in_plain_english_post",
+  "version": "1.0.0",
+  "description": "Code examples from the blog post",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RxJs",
+    "Reactive",
+    "Programming",
+    "JavaScript",
+    "Programming",
+    "Web",
+    "Development"
+  ],
+  "author": "Abdul H. Khan",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^6.6.3"
+  }
+}
