@@ -1,6 +1,6 @@
 
-// const { fromPromise } = require('rxjs/internal/observable/fromPromise');
-const { from } = require('rxjs');
+const { fromPromise } = require('rxjs/internal/observable/fromPromise');
+// const { from } = require('rxjs');
 
 function getShowsFromWatchList() { 
   const shows = [
@@ -17,8 +17,8 @@ function getShowsFromWatchList() {
  * In this case the Promise resovlves to the array of shows and the Observable emits the entire array.
  * That's why in the next() method we're looping over the shows.
 */
-// const shows$ = fromPromise(getShowsFromWatchList());
-const shows$ = from(getShowsFromWatchList());
+const shows$ = fromPromise(getShowsFromWatchList());
+// const shows$ = from(getShowsFromWatchList());
 
 shows$.subscribe(
   (shows) => {
