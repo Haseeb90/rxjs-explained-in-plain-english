@@ -37,24 +37,3 @@ showNames$().pipe(
   switchMap(name => getSearchedShowDetails$(name))
 ).subscribe(showDetails => console.log(showDetails));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
