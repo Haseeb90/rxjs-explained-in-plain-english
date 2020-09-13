@@ -16,8 +16,19 @@ function getShowsOnUsersWatchList() {
    * Observable.create allows us to define additional functionality inside the Observable
    * This makes it our responsibility to call the next(), error() and complete() methods of the Observer
   */
-  return Observable.create( observer => {
+  
+  // return Observable.create( observer => {
     
+  //   shows.forEach(show => {
+  //     if (show.isOnWatchList) {
+  //       observer.next(`* ${show.name} is on your watch list.`);
+  //     }
+  //   });
+
+  //   observer.complete();
+  // });
+
+  return new Observable(observer => {
     shows.forEach(show => {
       if (show.isOnWatchList) {
         observer.next(`* ${show.name} is on your watch list.`);
