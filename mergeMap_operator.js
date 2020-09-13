@@ -35,7 +35,7 @@ function getSeasonTwoEpisodes() {
 }
 
 function getAllEpisodesForThisSeries() {
-  return Observable.create(observer => {
+  return new Observable(observer => {
 
     // Emits episodes for season one
     observer.next(getSeasonOneEpisodes());
